@@ -27,8 +27,61 @@ body {
 #content {
     background-color: aliceblue;
     margin: 0;
+    min-height: calc(100vh - 64px);
+}
+
+#home-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
+}
+
+#menu-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    padding: 32px;
+}
+
+.menu-column h2 {
+    margin-bottom: 24px;
+}
+
+.menu-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.menu-info h3 {
+    margin: 0;
+}
+
+.menu-info p {
+    margin: 4px 0 0;
+    color: #555;
+}
+
+.menu-price {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+#about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.about-subheader {
+    margin-bottom: 8px;
+}
+
+.about-caption {
+    margin-bottom: 28px;
+    white-space: pre-line;
 }
 
 .home-image {

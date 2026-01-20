@@ -21,10 +21,13 @@ function Navbar() {
 
     const homeButton = document.createElement("button");
     homeButton.textContent = "Home";
+    homeButton.dataset.page = "home";
     const menuButton = document.createElement("button");
-    menuButton.textContent = "menu";
+    menuButton.textContent = "Menu";
+    menuButton.dataset.page = "menu";
     const aboutButton = document.createElement("button");
-    aboutButton.textContent = "about";
+    aboutButton.textContent = "About";
+    aboutButton.dataset.page = "about";
 
     buttons.append(homeButton, menuButton, aboutButton);
     nav.append(paragraph, buttons);
